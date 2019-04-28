@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FormBuku">
+
+    <ImageView
+        android:id="@+id/iv_gambar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        tools:srcCompat="@tools:sample/backgrounds/scenic[1]" />
+
+    <Button
+        android:id="@+id/btn_pilih"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pilih Gambar" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/namaBuku"
+        android:hint="Nama Buku"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/penulis"
+        android:hint="Penulis"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerKategori"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/stok"
+        android:hint="Stok"/>
+    <Button
+        android:id="@+id/btn_simpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simpan" />
+
+    <Button
+        android:id="@+id/btn_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Edit" />
+    <Button
+        android:id="@+id/btn_hapus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hapus" />
+
+</LinearLayout>

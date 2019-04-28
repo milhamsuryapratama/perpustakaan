@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linier_buku"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_buku"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_launcher_background" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingHorizontal="20dp">
+
+                    <TableRow android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="ID Buku" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" : " />
+
+                        <TextView
+                            android:id="@+id/dt_id_buku"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/dt_id_kategori"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/dt_filename"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="invisible" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="NAMA BUKU" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" : " />
+
+                        <TextView
+                            android:id="@+id/dt_nama_buku"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="PENULIS" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" : " />
+
+                        <TextView
+                            android:id="@+id/dt_penulis"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="KATEGORI" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" : " />
+
+                        <TextView
+                            android:id="@+id/dt_nama_kategori"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="STOK" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" : " />
+
+                        <TextView
+                            android:id="@+id/dt_stok"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </GridLayout>
+
+</LinearLayout>
